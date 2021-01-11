@@ -35,7 +35,7 @@ router.put('/api/burgers/:id', (req, res) => {
 //post new burger to html 
 router.post('/api/burgers', (req, res) => {
     burger.create('burger_name', [req.body.burger], (err, result) => {
-        res.json({id: result.insertId})
+        res.json(result)
         res.redirect('/burgers')
     });
 });
