@@ -77,7 +77,7 @@ I used some basic css to setup the layout of the page. Looked up an easy what to
 
 ## Usages
 
-For users that need to keep track of an employee data base, 
+Just for fun create odd or regular burgers and devour them. Also don't for get to clear your plate at the end or leave your mess for the next person to clean up. It's entirely up to you.
 
 ### Visuals
 
