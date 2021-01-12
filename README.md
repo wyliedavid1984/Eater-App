@@ -78,20 +78,20 @@ For users that need to keep track of an employee data base,
 <details>
 <summary>Screen Shots and Gif with Video link</summary>
 
-![Start of the application](./assets/images/start.png)
+![File Structure](./public/assets/img/fileStructure.png)
 
-![View Employee](./assets/images/employee.png)
+![Load page](./public/assets/img/deployedApp.png)
 
-![View Roles](./assets/images/roles.png)
+![Burgers Devoured](./public/assets/img/devoured.png)
 
-![View Dept](./assets/images/dept.png) 
+![Plate Cleaned](./public/assets/img/delete.png) 
 
-![Add Employee](./assets/images/addEmployee.png)
+
 
 
 Click on the gif to be linked to the video
 
-[![Gif of video](./assets/images/employeeTracker.gif)](https://drive.google.com/file/d/14KsK9Nu5ExY4cmreyg2_-70CqWG5MimC/view)
+[![Gif of video](./public/assets/img/burger.gif)](https://drive.google.com/file/d/1ksQ5MTSu6CmkSAFhV17CSLzbEYdXySuO/view)
 
 
 </details>
