@@ -1,13 +1,19 @@
 # Eater-App
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/><img src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/><img src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/><img src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/><img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/><img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
 
-[Git Hub repo](https://github.com/wyliedavid1984/EmployeeSystemManagement)
+[Link to Deployed app](https://immense-escarpment-41710.herokuapp.com/burgers)
 
 ## Description 
 
-I created an interface that makes it easier for non-developers to view and interact with information stored in database. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. So I architect and built a solution for managing a company's employees using node, inquirer, and MySQL.
+Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+
+Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+
+Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
+
+I create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I followed the MVC design pattern; use Node and MySQL to query and route data in the app, and Handlebars to generate HTML. The application will create burgers by taking in user input. They are then displayed on the html in a div and have a button to devour the burger. After you have devoured the burger it will move to div next to the first.  The last functionality to clear the plate and remove the burger from the database. 
 
 ### Table Of Contents
 
@@ -101,6 +107,7 @@ Click on the gif to be linked to the video
 * [Node Documents](https://nodejs.org/api/index.html)
 * [npm Documents](https://www.npmjs.com/)
 * [Express.js](https://expressjs.com/)
+* [Handlebars](https://handlebarsjs.com/guide/)
 * [Stack Overflow](https://stackoverflow.com/)
 * [W3Schools](https://www.w3schools.com/sql/default.asp)
 * [GitHub Gist create checkered background](https://gist.github.com/dfrankland/f6fed3e3ccc42e3de482b324126f9542)
