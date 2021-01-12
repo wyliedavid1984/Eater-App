@@ -65,7 +65,7 @@ I used two files to put together the html layouts and view. Main, that is locate
 
 ### CSS
 
-I used some basic css to setup the layout of the page and add a little color to the page.
+I used some basic css to setup the layout of the page. Looked up an easy what to create a checkered look and linked it below in my credits. I added a little color to some of the divs.
 
 </details>
 
@@ -103,7 +103,7 @@ Click on the gif to be linked to the video
 * [Express.js](https://expressjs.com/)
 * [Stack Overflow](https://stackoverflow.com/)
 * [W3Schools](https://www.w3schools.com/sql/default.asp)
-* [Stack Overflow create checker background](https://stackoverflow.com/questions/27277641/create-a-checkered-background-using-css)
+* [GitHub Gist create checkered background](https://gist.github.com/dfrankland/f6fed3e3ccc42e3de482b324126f9542)
 
 ## License
 
