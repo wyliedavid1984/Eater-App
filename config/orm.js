@@ -25,12 +25,11 @@ function objToSql(ob) {
         var value = ob[key];
         // check to skip hidden properties
         if (Object.hasOwnProperty.call(ob, key)) {
-            // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+
             if (typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
             }
-            // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-            // e.g. {sleepy: true} => ["sleepy=true"]
+
             arr.push(key + "=" + value);
         }
     }
@@ -43,11 +42,11 @@ function objToSql(ob) {
 var orm = {
     all: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
-       pool.query(queryString, function (err, result) {
+        pool.query(queryString, function (err, result) {
             if (err) {
                 throw err;
             }
-            cb(result);
+            cb(err, result);
         });
     },
     create: function (table, cols, vals, cb) {
@@ -61,16 +60,15 @@ var orm = {
         queryString += ") ";
 
         console.log(queryString);
-
-       pool.query(queryString, vals, function (err, result) {
+        
+        pool.query(queryString, vals, function (err, result) {
             if (err) {
                 throw err;
             }
 
-            cb(result);
+            cb(err, result);
         });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
     update: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
 
@@ -79,19 +77,29 @@ var orm = {
         queryString += " WHERE ";
         queryString += condition;
 
-        console.log(queryString);
-       pool.query(queryString, function (err, result) {
+        pool.query(queryString, function (err, result) {
             if (err) {
                 throw err;
             }
 
-            cb(result);
+            cb(err, result);
+        });
+    },
+    delete: function (table, condition, cb) {
+        var queryString = "DELETE FROM " + table;
+
+        queryString += " WHERE ";
+        queryString += condition;
+
+        pool.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(err, result);
         });
     }
 };
 
-// Export the orm object for the model (cat.js).
-module.exports = orm;
-
-
+// Export the orm object for the model
 module.exports = orm;
