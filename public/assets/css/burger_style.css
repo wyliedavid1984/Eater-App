@@ -1,0 +1,42 @@
+body {
+    background-color: tan;
+    color: red;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 60%;
+}
+
+h1{
+   text-align: center;
+}
+
+.container{
+display: flex;
+}
+
+.burger {
+    margin: auto;
+    width: 50%;
+    float: left;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.eaten {
+    margin: auto;
+    width: 50%;
+    float: right;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.addBurger {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
