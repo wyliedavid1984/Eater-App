@@ -18,15 +18,14 @@ $(document).ready(() => {
         event.preventDefault();
         let newBurger = {
             burger_name: $('#newBurger').val().trim()
-        } 
-        console.log("frontend", newBurger);
-        $.ajax("/api/burgers", {
+        }
+        $.ajax("api/burgers", {
             method: 'POST',
             data: newBurger,
             // dataType: "text"
         }).then(()=>{
             console.log("Made that from scratch")
-            // location.reload()
+            location.reload()
         })
     });
 

@@ -49,6 +49,7 @@ var orm = {
             cb(err, result);
         });
     },
+    // sets up query string to create a new burger
     create: function (table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
 
@@ -58,8 +59,6 @@ var orm = {
         queryString += "VALUES (";
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
-
-        console.log(queryString);
         
         pool.query(queryString, vals, function (err, result) {
             if (err) {

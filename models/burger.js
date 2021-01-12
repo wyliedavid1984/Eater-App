@@ -7,17 +7,17 @@ var burger = {
         });
     }, 
     update: function (objColVals, condition, cb){
-        orm.update('burgers', objColVals, condition, (err, res) =>{
+        orm.update('burgers', objColVals, condition, function(err, res) {
             cb(err, res)
         })
     },
     create: function (cols, vals, cb){
-        orm.create("burgers", cols, vals, (err, res) =>{
+        orm.create("burgers", cols, vals, function (err, res) {
             cb(err, res)
         });
     },
     delete: function (condition, cb) {
-        orm.delete('burgers', condition, (err, res) => {
+        orm.delete('burgers', condition, function (err, res) {
             cb(err, res)
         })
     }
