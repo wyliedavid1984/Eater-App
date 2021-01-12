@@ -3,10 +3,6 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 
 const app = express();
-
-//imported routes
-const routes = require("./controllers/burgers_controller");
-
 // port variable
 const PORT = process.env.PORT || 3000;
 
@@ -19,8 +15,12 @@ app.engine('.hbs', exphbs({
 }));
 app.set('view engine', '.hbs');
 
+//imported routes
+const routes = require("./controllers/burgers_controller");
+
 // route paths
 app.use(routes);
+
 
 // listen to server
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
