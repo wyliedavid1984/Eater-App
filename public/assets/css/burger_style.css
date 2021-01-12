@@ -1,6 +1,24 @@
 body {
-    background-color: tan;
-    color: red;
+  background-image:
+    linear-gradient(45deg, rgb(221, 17, 17) 25%, transparent 25%),
+    linear-gradient(135deg, rgb(201, 15, 15) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgb(197, 40, 40) 75%),
+    linear-gradient(135deg, transparent 75%, rgb(211, 32, 32) 75%);
+  background-size: 25px 25px;
+  /* Must be a square */
+  background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px;
+  /* Must be half of one side of the square */
+}
+
+header{
+   display: table;
+   margin: 0 auto;
+}
+
+h1{
+  display: inline-block;
+  background-color: white;
+   text-align: center; 
 }
 
 img{
@@ -11,8 +29,8 @@ img{
   height: 60%;
 }
 
-h1{
-   text-align: center;
+ul{
+  list-style-type: none;
 }
 
 .container{
@@ -20,22 +38,30 @@ display: flex;
 }
 
 .burger {
+
+  background-color: tan;
     margin: auto;
     width: 50%;
     float: left;
+    border-radius: 30%;
     border: 3px solid green;
     padding: 10px;
+    text-align: center;
 }
 
 .eaten {
+    background-color: tan;
     margin: auto;
     width: 50%;
     float: right;
     border: 3px solid green;
+    border-radius: 30%;
     padding: 10px;
+    text-align: center;
 }
 
 .addBurger {
+  background-color: white;
   display: block;
   margin-left: auto;
   margin-right: auto;

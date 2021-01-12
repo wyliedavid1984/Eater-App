@@ -30,23 +30,42 @@ I created an interface that makes it easier for non-developers to view and inter
 
 ## Javascript
 
+I use the MVC model to put together this project. It starts with orm Object Relational Mapping. This makes use of sql language to query the data base, and also passes in parameters and callback function. From there, I made a javascript file that sets up functions from orm to pull data from the burger table. Then lastly, moving into controller folder that file is where all the routes are setup. 
+
+### JQuery
+
+I used jquery to help grab the data that the user input. It also gets other elements on the page, so that they can be manipulated. Each function that created has a corresponding route on the backend to help with the manipulation of the data being selected by the jQuery.
+
 ### Node
 
-I used node to initialize package.json. After the initialization, I added mysql, express.  Also used node to make a connection with the data base.   
+I used node to initialize package.json. After the initialization, I added mysql, express, express-handlebars.  Also used node to make a connection with the data base.  We also use it to spin up a server instance. 
 
 ### NPM
 
-I used npm to install the dependency express that did most of the heavy lifting for this application. I also installed uuid to help with creating ids. 
+I used npm to install the following dependencies mysql, express-handlebars, and express. 
 
 #### MYSQL
 
-I use mysql to make a connections to the data base by running it through node. I made several queries to get specific data in each time.  In certain instance I used a for loop and others I used map to display data to the CLI. I also used console.table to display certain sets of data or the response.
+I use mysql to make a connections to the data base by running it through node. I made several queries to get specific data through separate functions. I also used helper functions to help with the readability of the data and also to help with passing multiple parameters.
 
 #### Express
 
-Express made coding this application much easier. I made use of the express function through a variable named app.  It helped to reduce the amount of code needed to make requests and responses.  
+Express made coding this application much easier. I made use of the express function through a variable named route.  It helped to reduce the amount of code needed to make requests and responses.  
 
-I built routes and stored them in the routes files. One to deal with apis and the second to deal with html. I used the express router function to make it easier to set up the requests.  In the html routes mainly made get requests to grab the two different html pages that were stored in the views folder. Index is setup so that any file extension put in will take you the index. The other route will take you to the notes html that will take in user input.  I also used router in the api routes that I setup. In the api file I used more than the get requests. I made use of post to get data and resend the incoming data and us the response to put it back on the html page with the help of our file system node application.  I did the same thing with the delete 
+I built routes and stored them in the routes files. 
+
+I used the express router function to make it easier to set up the requests.  In the html routes mainly made get requests to grab the html page that is stored in the views folder. Index is setup as the starting html. Other routes were created to handle user input.  I also used router was use to setup api routes and transfer user data to the database. I made use of post to get data and resend the incoming data and us the response to put it back on the html page with the help of our file system node application.  I did the same thing with the delete function.
+
+
+### HTML
+
+#### Handle Bars - express
+
+I used two files to put together the html layouts and view. Main, that is located in layouts folder, is there to setup the reference to handlebars. So the rest of the html views will be injected to the main html. Index hbs is where I dynamically add the rest of our content for the page. 
+
+### CSS
+
+I used some basic css to setup the layout of the page and add a little color to the page.
 
 </details>
 
@@ -84,6 +103,7 @@ Click on the gif to be linked to the video
 * [Express.js](https://expressjs.com/)
 * [Stack Overflow](https://stackoverflow.com/)
 * [W3Schools](https://www.w3schools.com/sql/default.asp)
+* [Stack Overflow create checker background](https://stackoverflow.com/questions/27277641/create-a-checkered-background-using-css)
 
 ## License
 
