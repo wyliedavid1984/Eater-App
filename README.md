@@ -32,7 +32,7 @@ I created an interface that makes it easier for non-developers to view and inter
 
 ### Node
 
-I used node to initialize package.json. After the initialization, I added inquirer, mysql, lodash, console.table, chalk and figlet via NPM.  Also used node to make a connection with the data base.   
+I used node to initialize package.json. After the initialization, I added mysql, express.  Also used node to make a connection with the data base.   
 
 ### NPM
 
@@ -42,17 +42,11 @@ I used npm to install the dependency express that did most of the heavy lifting 
 
 I use mysql to make a connections to the data base by running it through node. I made several queries to get specific data in each time.  In certain instance I used a for loop and others I used map to display data to the CLI. I also used console.table to display certain sets of data or the response.
 
-#### Inquirer
+#### Express
 
-I used inquirer for all the prompts to the user. I use several types of question to prompt users. I used input, list, and raw list to get number value.
+Express made coding this application much easier. I made use of the express function through a variable named app.  It helped to reduce the amount of code needed to make requests and responses.  
 
-#### Chalk, Figlet
-
-I used these two dependencies to style the start of of the application
-
-#### Console.table
-
-The dependency displays object and other data sets in a cleaner form. I used it specifically for that purpose.
+I built routes and stored them in the routes files. One to deal with apis and the second to deal with html. I used the express router function to make it easier to set up the requests.  In the html routes mainly made get requests to grab the two different html pages that were stored in the views folder. Index is setup so that any file extension put in will take you the index. The other route will take you to the notes html that will take in user input.  I also used router in the api routes that I setup. In the api file I used more than the get requests. I made use of post to get data and resend the incoming data and us the response to put it back on the html page with the help of our file system node application.  I did the same thing with the delete 
 
 </details>
 

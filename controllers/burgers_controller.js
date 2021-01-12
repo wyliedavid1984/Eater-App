@@ -31,7 +31,6 @@ router.put('/api/burgers/:id', (req, res) => {
     burger.update({
         devoured: req.body.devoured
     }, condition, (err, result) => {
-        console.log(result)
         if (err) {
             return res.status(500).end()
         }

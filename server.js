@@ -3,7 +3,12 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 
 const app = express();
+
+//imported routes
 const routes = require("./controllers/burgers_controller");
+
+// port variable
+const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(express.static("public"))
@@ -13,9 +18,6 @@ app.engine('.hbs', exphbs({
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
-
-// port variable
-const PORT = process.env.PORT || 3000;
 
 // route paths
 app.use(routes);
